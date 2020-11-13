@@ -1,0 +1,30 @@
+7)****JSON***
+package main  
+import "encoding/json"  
+import "fmt"  
+  
+func main() {  
+    bolType, _ := json.Marshal(false)  
+    fmt.Println(string(bolType))  
+    intType, _ := json.Marshal(10) 
+    fmt.Println(string(intType))  
+    fltType, _ := json.Marshal(3.14)  
+    fmt.Println(string(fltType))  
+    strType, _ := json.Marshal("golang") 
+    fmt.Println(string(strType))  
+    slcA := []string{"kloud", "one", "learn"} 
+    slcB, _ := json.Marshal(slcA)  
+    fmt.Println(string(slcB))  
+    mapA := map[string]int{"kloud": 1, "learn": 2}  
+    mapB, _ := json.Marshal(mapA)  
+    fmt.Println(string(mapB))  
+}  
+
+false
+10
+3.14
+"golang"
+["kloud","one","learn"]
+{"kloud":1,"learn":2}
+
+Program exited.

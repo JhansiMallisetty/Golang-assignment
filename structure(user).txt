@@ -1,0 +1,53 @@
+9)****structure(user)****
+package main
+
+import "fmt"
+
+type Employee struct {
+   Name string
+   Surname string
+   Age int
+   Salary int
+}
+func main() {
+   var Emp1 Employee    
+   var Emp2 Employee    
+ 
+   
+   Emp1.Name = "jhansi"
+   Emp1.Surname = "mallisetty"
+   Emp1.Age = 23
+   Emp1.Salary = 25000
+
+   
+   Emp2.Name = "suji"
+   Emp2.Surname = "mallisetty"
+   Emp2.Age = 20
+   Emp2.Salary = 30000
+
+   fmt.Printf("Employee 1\n")
+   fmt.Printf( "Name : %s\n", Emp1.Name)
+   fmt.Printf( "Surname : %s\n", Emp1.Surname)
+   fmt.Printf( "Age : %d\n", Emp1.Age)
+   fmt.Printf( "Salary : %d\n", Emp1.Salary)
+
+   
+   fmt.Printf("Employee 2\n")
+   fmt.Printf( "Name : %s\n", Emp2.Name)
+   fmt.Printf( "Surname : %s\n", Emp2.Surname)
+   fmt.Printf( "Age : %d\n", Emp2.Age)
+   fmt.Printf( "Salary : %d\n", Emp2.Salary)
+
+}
+ 
+***output***
+Employee 1
+Name : jhansi
+Surname : mallisetty
+Age : 23
+Salary : 25000
+Employee 2
+Name : suji
+Surname : mallisetty
+Age : 20
+Salary : 30000
